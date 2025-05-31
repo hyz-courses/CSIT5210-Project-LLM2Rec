@@ -12,7 +12,7 @@ To execute the code correctly, the following python packages are required:
 - `flash-attn >= 2.7.4`
 
 ## Datasets
-The zipped datasets used in this paper can be downloaded from this [link](https://drive.google.com/file/d/1cJtTcIKJ0Dgi8LyJBX19F9_yd7gOEUbI/view?usp=drive_link). Please unzip the dataset files under directory `./data` .
+The zipped datasets used in this paper can be downloaded from this [link](https://drive.google.com/file/d/1GIXWaaaNuUkUtuFy5JTN0OwAQiLGb2z4/view?usp=sharing). Please unzip the dataset files under directory `./data` .
 
 ## Training
 
