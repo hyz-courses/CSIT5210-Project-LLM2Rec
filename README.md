@@ -1,7 +1,7 @@
 # LLM2Rec: Large Language Models Are Powerful Embedding Models for Sequential Recommendation
 
 ## Introduction
-This is the code implementation for paper "LLM2Rec: Large Language Models Are Powerful Embedding Models for Sequential Recommendation".
+This is the code implementation for our paper on KDD'25 "LLM2Rec: Large Language Models Are Powerful Embedding Models for Sequential Recommendation".
 
 ## Environments
 To execute the code correctly, the following python packages are required:
@@ -47,6 +47,18 @@ bash script_extract_and_evaluate.sh
 
 You can change the paths of the saved checkpoints to evaluate in the config part of the script_extract_and_evaluate.sh script.
 
+
+## Citation
+If you find our repo useful, please consider citing:
+```bibtex
+@inproceedings{he2025llm2rec,
+  title={LLM2Rec: Large Language Models Are Powerful Embedding Models for Sequential Recommendation},
+  author={He, Yingzhi and Liu, Xiaohao and Zhang, An and Ma, Yunshan and Chua, Tat-Seng},
+  booktitle={Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V. 2},
+  pages={896--907},
+  year={2025}
+}
+```
 
 ## Acknowledgements
 
