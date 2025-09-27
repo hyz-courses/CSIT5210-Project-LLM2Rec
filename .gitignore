@@ -1,5 +1,6 @@
 # datasets/
 .vscode/
+.idea/
 data
 data/
 data_EasyRec_setting/
