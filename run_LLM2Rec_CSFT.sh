@@ -10,7 +10,7 @@ do
 
     # Change from source code: Only 1 cpu node and 1 process per node
 
-    CUDA_VISIBLE_DEVICES=0 torchrun --master_port=25649 --nproc_per_node 1 \
+    CUDA_VISIBLE_DEVICES=0 /home/$USER/llm2rec-venv/bin/torchrun --master_port=25649 --nproc_per_node 1 \
         ./llm2rec/run_csft.py \
         --base_model ${model_path} \
         --train_file ${train_file} \
