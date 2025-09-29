@@ -39,7 +39,7 @@ do
             bidirectional=1
 
             # Extract embeddings
-            CUDA_VISIBLE_DEVICES=$cuda_device python extract_llm_embedding.py --dataset=$dataset \
+            CUDA_VISIBLE_DEVICES=$cuda_device /home/$USER/llm2rec-venv/bin/python extract_llm_embedding.py --dataset=$dataset \
                 --model_path=$model_path \
                 --item_prompt_type=$extraction_method \
                 --bidirectional=$bidirectional \
@@ -67,7 +67,7 @@ do
             port=$((12000 + RANDOM % 1000))
 
             # Evaluate the model
-            CUDA_VISIBLE_DEVICES=$cuda_device accelerate launch --main_process_port=$port repeated_evaluate_with_seqrec.py \
+            CUDA_VISIBLE_DEVICES=$cuda_device /home/$USER/llm2rec-venv/bin/accelerate launch --main_process_port=$port repeated_evaluate_with_seqrec.py \
                 --model=$model \
                 --dataset=$dataset \
                 --lr=$lr \

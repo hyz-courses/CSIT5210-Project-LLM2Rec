@@ -37,7 +37,7 @@ for dataset_entry in "${datasets[@]}"; do
 
         for embs in "${embeddings[@]}"; do
             echo "Running evaluation with dataset=$dataset, CUDA_VISIBLE_DEVICES=$cuda_device, and embeddings=$embs"
-            CUDA_VISIBLE_DEVICES=$cuda_device accelerate launch --main_process_port=$((port_base + cuda_device)) repeated_evaluate_with_seqrec.py \
+            CUDA_VISIBLE_DEVICES=$cuda_device /home/$USER/llm2rec-venv/bin/accelerate launch --main_process_port=$((port_base + cuda_device)) repeated_evaluate_with_seqrec.py \
                 --model=$model \
                 --dataset=$dataset \
                 --lr=$lr \
