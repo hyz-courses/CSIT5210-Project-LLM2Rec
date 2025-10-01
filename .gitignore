@@ -8,6 +8,7 @@ data_EasyRec_setting/
 checkpoints/
 log/
 runs/
+assets/
 
 __pycache__/
 *.ttc
